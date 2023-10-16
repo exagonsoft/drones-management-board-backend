@@ -19,7 +19,77 @@ public class GlobalExceptionHandlerTest {
         assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
-    // Add similar tests for other exception handling methods
+    @Test
+    public void testHandleDuplicateSerialNumberException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandleMaxSerialNumberCharacters() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerStateAllowedValueException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerLowBatteryException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerMaxWeightCapacityExceededException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerMedicationInvalidNamePatternException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerMedicationCodeInvalidPatternException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerDroneInvalidLoadStateException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
+
+    @Test
+    public void testHandlerModelAllowedValueException() {
+        MaxWeightExceededException ex = new MaxWeightExceededException("Max weight exceeded");
+        ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
+        assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
+        assertEquals("Conflict", responseEntity.getBody().getError());
+    }
 
     @Test
     public void testHandleOtherExceptions() {
