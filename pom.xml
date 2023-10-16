@@ -83,7 +83,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>				<!-- Use the latest version -->
 				<configuration>
-					<reportsDirectory>${project.basedir}/test-reports/surefire-reports</reportsDirectory>
+					<reportsDirectory>${project.basedir}/coverage/surefire-reports</reportsDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -91,7 +91,7 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<version>3.0.0-M5</version>				<!-- Use the latest version -->
 				<configuration>
-					<reportsDirectory>${project.basedir}/test-reports/failsafe-reports</reportsDirectory>
+					<reportsDirectory>${project.basedir}/coverage/failsafe-reports</reportsDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
