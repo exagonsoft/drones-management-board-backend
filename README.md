@@ -1,72 +1,13 @@
-## Drones
+ <link rel="stylesheet" href="./src/main/resources/static/assets/styles.css">
+ <div class="logo-container">
+    <img src="./src/main/resources/static/assets/logo.png" alt="Drones" width=200px class="logo" />
+  </div>
 
-[[_TOC_]]
+# Drones Management REST API
 
----
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/exagonsoft/ShieldBearer/main?style=flat&logo=github&logoColor=red)
+![Codecov branch](https://img.shields.io/codecov/c/github/exagonsoft/ShieldBearer/main?style=flat&logo=codecov&logoColor=red)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b5fd0f45b22f4a4f9e9c69015089556c)](https://app.codacy.com/gh/exagonsoft/ShieldBearer/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+![GitHub](https://img.shields.io/github/license/exagonsoft/ShieldBearer?style=flat&logo=Medium&logoColor=green)
 
-:scroll: **START**
-
-
-### Introduction
-
-There is a major new technology that is destined to be a disruptive force in the field of transportation: **the drone**. Just as the mobile phone allowed developing countries to leapfrog older technologies for personal communication, the drone has the potential to leapfrog traditional transportation infrastructure.
-
-Useful drone functions include delivery of small items that are (urgently) needed in locations with difficult access.
-
----
-
-### Task description
-
-We have a fleet of **10 drones**. A drone is capable of carrying devices, other than cameras, and capable of delivering small loads. For our use case **the load is medications**.
-
-A **Drone** has:
-- serial number (100 characters max);
-- model (Lightweight, Middleweight, Cruiserweight, Heavyweight);
-- weight limit (500gr max);
-- battery capacity (percentage);
-- state (IDLE, LOADING, LOADED, DELIVERING, DELIVERED, RETURNING).
-
-Each **Medication** has: 
-- name (allowed only letters, numbers, ‘-‘, ‘_’);
-- weight;
-- code (allowed only upper case letters, underscore and numbers);
-- image (picture of the medication case).
-
-Develop a service via REST API that allows clients to communicate with the drones (i.e. **dispatch controller**). The specific communicaiton with the drone is outside the scope of this task. 
-
-The service should allow:
-- registering a drone;
-- loading a drone with medication items;
-- checking loaded medication items for a given drone; 
-- checking available drones for loading;
-- check drone battery level for a given drone;
-
-> Feel free to make assumptions for the design approach. 
-
----
-
-### Requirements
-
-While implementing your solution **please take care of the following requirements**: 
-
-#### Functional requirements
-
-- There is no need for UI;
-- Prevent the drone from being loaded with more weight that it can carry;
-- Prevent the drone from being in LOADING state if the battery level is **below 25%**;
-- Introduce a periodic task to check drones battery levels and create history/audit event log for this.
-
----
-
-#### Non-functional requirements
-
-- Input/output data must be in JSON format;
-- Your project must be buildable and runnable;
-- Your project must have a README file with build/run/test instructions (use DB that can be run locally, e.g. in-memory, via container);
-- Any data required by the application to run (e.g. reference tables, dummy data) must be preloaded in the database;
-- Unit tests;
-- Use a framework of your choice, but popular, up-to-date, and long-term support versions are recommended.
-
----
-
-:scroll: **END** 
+ShieldBearer is a cutting-edge npm package meticulously crafted to simplify JSON Web Token (JWT) operations in JavaScript projects. This library stands out by not relying on any external libraries or tools, ensuring a lightweight and efficient solution for secure token handling. ShieldBearer empowers developers to seamlessly sign, decode, and validate JWTs, enhancing the security and reliability of applications.
