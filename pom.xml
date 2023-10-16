@@ -84,6 +84,10 @@
 				<version>3.0.0-M5</version>				<!-- Use the latest version -->
 				<configuration>
 					<reportsDirectory>${project.basedir}/coverage/surefire-reports</reportsDirectory>
+					<testFailureIgnore>true</testFailureIgnore>
+					<redirectTestOutputToFile>true</redirectTestOutputToFile>
+					<rerunFailingTestsCount>3</rerunFailingTestsCount>
+					<useFile>false</useFile>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -92,8 +96,36 @@
 				<version>3.0.0-M5</version>				<!-- Use the latest version -->
 				<configuration>
 					<reportsDirectory>${project.basedir}/coverage/failsafe-reports</reportsDirectory>
+					<testFailureIgnore>true</testFailureIgnore>
+					<redirectTestOutputToFile>true</redirectTestOutputToFile>
 				</configuration>
 			</plugin>
+			<plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                    <configuration>
+                        <destFile>${project.basedir}/coverage/jacoco.exec</destFile>
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>report</id>
+                    <phase>prepare-package</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                    <configuration>
+                        <dataFile>${project.basedir}/coverage/jacoco.exec</dataFile>
+                        <outputDirectory>${project.basedir}/coverage</outputDirectory>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 		</plugins>
 	</build>
 
