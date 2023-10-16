@@ -25,6 +25,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -33,6 +34,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -41,6 +43,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -49,6 +52,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -57,6 +61,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -65,6 +70,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -73,6 +79,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -81,6 +88,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
@@ -89,6 +97,7 @@ public class GlobalExceptionHandlerTest {
         ResponseEntity<ErrorResponse> responseEntity = globalExceptionHandler.handleMaxWeightExceededException(ex);
         assertEquals(HttpStatus.CONFLICT, responseEntity.getStatusCode());
         assertEquals("Conflict", responseEntity.getBody().getError());
+        assertEquals("Max weight exceeded", responseEntity.getBody().getMessage());
     }
 
     @Test
