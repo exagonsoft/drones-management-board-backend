@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: exagonsoft.drones.utils.UtilFunctionsTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in exagonsoft.drones.utils.UtilFunctionsTest
