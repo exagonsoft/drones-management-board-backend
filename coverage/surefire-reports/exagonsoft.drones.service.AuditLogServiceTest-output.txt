@@ -1,0 +1,54 @@
+12:44:34.210 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [exagonsoft.drones.service.AuditLogServiceTest]: AuditLogServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:44:34.521 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration exagonsoft.drones.DronesBackendApplication for test class exagonsoft.drones.service.AuditLogServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-16T12:44:35.327-04:00  INFO 20076 --- [           main] e.drones.service.AuditLogServiceTest     : Starting AuditLogServiceTest using Java 17.0.8.1 with PID 20076 (started by Alvaro R Martin in E:\Work\Musala-Soft\drones-management-board-backend)
+2023-10-16T12:44:35.330-04:00  INFO 20076 --- [           main] e.drones.service.AuditLogServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16T12:44:36.640-04:00  INFO 20076 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-16T12:44:36.808-04:00  INFO 20076 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+2023-10-16T12:44:37.659-04:00  INFO 20076 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-16T12:44:38.403-04:00  INFO 20076 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2023-10-16T12:44:38.408-04:00  INFO 20076 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-16T12:44:38.542-04:00  INFO 20076 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-16T12:44:38.738-04:00  INFO 20076 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-16T12:44:38.747-04:00  INFO 20076 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-16T12:44:39.300-04:00  INFO 20076 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-16T12:44:39.673-04:00  INFO 20076 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-16T12:44:40.420-04:00  INFO 20076 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-16T12:44:42.162-04:00  INFO 20076 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-16T12:44:42.300-04:00  INFO 20076 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-16T12:44:42.851-04:00  INFO 20076 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-16T12:44:43.514-04:00  WARN 20076 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-16T12:44:44.178-04:00  INFO 20076 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-10-16T12:44:44.316-04:00  INFO 20076 --- [           main] e.drones.service.AuditLogServiceTest     : Started AuditLogServiceTest in 9.49 seconds (process running for 11.854)
+
+
+****************************BATTERY LEVEL INFO 2023-10-16T12:44:45.103833800****************************
+
+--Drone with Serial Number rfwe3245 battery level: 100%
+--Drone with Serial Number uier2734 battery level: 100%
+--Drone with Serial Number plsh1234 battery level: 100%
+--Drone with Serial Number mxzn6789 battery level: 100%
+
+****************************BATTERY LEVEL INFO 2023-10-16T12:44:45.103833800 END ****************************
+
+
+
+
+****************************Simulating Drones Life Cycle New State****************************
+
+--Drone rfwe3245 is now IDLE
+--Drone uier2734 is now IDLE
+--Drone plsh1234 is now IDLE
+--Drone mxzn6789 is now IDLE
+
+****************************Simulating Drones Life Cycle New State END ****************************
+
+
