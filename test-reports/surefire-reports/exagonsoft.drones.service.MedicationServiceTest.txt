@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: exagonsoft.drones.service.MedicationServiceTest
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in exagonsoft.drones.service.MedicationServiceTest
